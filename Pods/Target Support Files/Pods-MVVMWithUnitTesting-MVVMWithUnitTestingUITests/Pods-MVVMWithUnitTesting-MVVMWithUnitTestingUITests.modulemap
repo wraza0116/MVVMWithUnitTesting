@@ -1,0 +1,6 @@
+framework module Pods_MVVMWithUnitTesting_MVVMWithUnitTestingUITests {
+  umbrella header "Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
