@@ -147,14 +147,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvr-nb-L4g">
                                 <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9z-fi-hOx">
-                                        <rect key="frame" x="15" y="8" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="CGc-P4-K9N"/>
-                                            <constraint firstAttribute="height" constant="44" id="gmC-uo-HaM"/>
-                                        </constraints>
-                                        <state key="normal" image="cross_dark_grey"/>
-                                    </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaM-29-1iW">
                                         <rect key="frame" x="342" y="13.5" width="57" height="33"/>
                                         <fontDescription key="fontDescription" name="Bicyclette-Regular" family="Bicyclette" pointSize="18"/>
@@ -171,11 +163,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="x9z-fi-hOx" firstAttribute="leading" secondItem="jvr-nb-L4g" secondAttribute="leading" constant="15" id="Phg-BG-pgl"/>
                                     <constraint firstItem="c0j-Rv-KUN" firstAttribute="centerY" secondItem="jvr-nb-L4g" secondAttribute="centerY" id="RJc-hr-env"/>
                                     <constraint firstItem="c0j-Rv-KUN" firstAttribute="centerX" secondItem="jvr-nb-L4g" secondAttribute="centerX" id="a1t-H8-VUN"/>
                                     <constraint firstAttribute="trailing" secondItem="aaM-29-1iW" secondAttribute="trailing" constant="15" id="ene-RB-YgB"/>
-                                    <constraint firstItem="x9z-fi-hOx" firstAttribute="centerY" secondItem="jvr-nb-L4g" secondAttribute="centerY" id="f9q-UP-5Cy"/>
                                     <constraint firstItem="aaM-29-1iW" firstAttribute="centerY" secondItem="jvr-nb-L4g" secondAttribute="centerY" id="mGB-ez-XiL"/>
                                     <constraint firstAttribute="height" constant="60" id="oJb-66-IFZ"/>
                                 </constraints>
@@ -183,7 +173,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V2b-gp-Ib5">
                                 <rect key="frame" x="16" y="144" width="382" height="140"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zL-GH-IXz" customClass="SkyFloatingLabelTextField" customModule="MVVMWithUnitTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zL-GH-IXz">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="oNR-6g-KJk"/>
@@ -191,40 +181,8 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Bicyclette-Regular" family="Bicyclette" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
-                                                <color key="value" name="Token_Gray_BDBDBD"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                                                <color key="value" name="Token_Gray_BDBDBD"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" name="Token_Gray_BDBDBD"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="leftViewPadding">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" name="Token_Gray_F8F8FA"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z7e-fG-IxR" customClass="SkyFloatingLabelTextField" customModule="MVVMWithUnitTesting" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z7e-fG-IxR">
                                         <rect key="frame" x="0.0" y="80" width="382" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="4e9-cP-8zd"/>
@@ -232,42 +190,10 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Bicyclette-Regular" family="Bicyclette" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
-                                                <color key="value" name="Token_Gray_BDBDBD"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                                                <color key="value" name="Token_Gray_BDBDBD"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" name="Token_Gray_BDBDBD"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="leftViewPadding">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" name="Token_Gray_F8F8FA"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHT-pr-7cN" customClass="WRCustomButton" customModule="MVVMWithUnitTesting" customModuleProvider="target">
+                            <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHT-pr-7cN">
                                 <rect key="frame" x="16" y="314" width="382" height="53"/>
                                 <color key="backgroundColor" name="Token_Green_568D3F"/>
                                 <constraints>
@@ -282,6 +208,9 @@
                                         <real key="value" value="25.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPressedAction:" destination="gie-iC-ui6" eventType="touchUpInside" id="7PR-aV-7La"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-SJ-nRw" customClass="WRCustomButton" customModule="MVVMWithUnitTesting" customModuleProvider="target">
                                 <rect key="frame" x="16" y="494" width="382" height="53"/>
@@ -395,6 +324,10 @@
                             <constraint firstItem="jvr-nb-L4g" firstAttribute="top" secondItem="k2b-ba-wfb" secondAttribute="top" id="ynV-7y-34y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="7zL-GH-IXz" id="zhC-Z9-qo4"/>
+                        <outlet property="txtPassword" destination="Z7e-fG-IxR" id="3O3-0J-kJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmS-J0-Qpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,7 +352,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cross_dark_grey" width="13" height="13"/>
         <image name="logoWithBg" width="375" height="812"/>
         <namedColor name="Token_Gray_656566">
             <color red="0.39599999785423279" green="0.39599999785423279" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
