@@ -47,9 +47,13 @@ extension LoginVC {
     
     func callToLoginInApp() {
         
-        
+        self.loginViewModel.bindLoginViewModelToLoginController = {
+            self.updateUI()
+        }
     }
     
     func updateUI() {
+        print("Success Login UserModel : ",self.loginViewModel.userModel)
+        print("Error Message : ",self.loginViewModel.message)
     }
 }

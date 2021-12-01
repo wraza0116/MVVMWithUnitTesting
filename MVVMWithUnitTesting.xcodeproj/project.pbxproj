@@ -22,6 +22,8 @@
 		BD529D6E2756878200F59569 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD529D6D2756878200F59569 /* APIService.swift */; };
 		BD529D7227568BD900F59569 /* WebServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD529D7127568BD900F59569 /* WebServicesManager.swift */; };
 		BD529D7427568E9900F59569 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD529D7327568E9900F59569 /* UserModel.swift */; };
+		BDD03E082757C3B20097A975 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD03E072757C3B10097A975 /* AppConstant.swift */; };
+		BDD03E0B2757CF440097A975 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD03E0A2757CF430097A975 /* Extensions.swift */; };
 		C6228707C4D76FA26911D79A /* Pods_MVVMWithUnitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E82A08C9247C4EE7D1E9FFA /* Pods_MVVMWithUnitTesting.framework */; };
 		EAE2C95A3B04CC1C9204F09E /* Pods_MVVMWithUnitTesting_MVVMWithUnitTestingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F254B9FE53A822FF6A0C23CC /* Pods_MVVMWithUnitTesting_MVVMWithUnitTestingUITests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,8 @@
 		BD529D6D2756878200F59569 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		BD529D7127568BD900F59569 /* WebServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesManager.swift; sourceTree = "<group>"; };
 		BD529D7327568E9900F59569 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		BDD03E072757C3B10097A975 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		BDD03E0A2757CF430097A975 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DD4DB65C3631591185723519 /* Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F254B9FE53A822FF6A0C23CC /* Pods_MVVMWithUnitTesting_MVVMWithUnitTestingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMWithUnitTesting_MVVMWithUnitTestingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +153,7 @@
 		BD35FF1D2755091700B86F36 /* MVVMWithUnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				BDD03E092757CF430097A975 /* Extension */,
 				BD529D6C2756870400F59569 /* APIManagers */,
 				BD529D63275662B500F59569 /* MVVM */,
 				BD529D602756621800F59569 /* AppControllerManager */,
@@ -186,6 +191,7 @@
 		BD529D602756621800F59569 /* AppControllerManager */ = {
 			isa = PBXGroup;
 			children = (
+				BDD03E072757C3B10097A975 /* AppConstant.swift */,
 				BD35FF1E2755091700B86F36 /* AppDelegate.swift */,
 				BD35FF202755091700B86F36 /* SceneDelegate.swift */,
 			);
@@ -260,6 +266,14 @@
 				BD529D7127568BD900F59569 /* WebServicesManager.swift */,
 			);
 			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		BDD03E092757CF430097A975 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BDD03E0A2757CF430097A975 /* Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,10 +515,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD03E082757C3B20097A975 /* AppConstant.swift in Sources */,
 				BD529D5E2756612300F59569 /* SplashVC.swift in Sources */,
 				BD529D7227568BD900F59569 /* WebServicesManager.swift in Sources */,
 				BD529D7427568E9900F59569 /* UserModel.swift in Sources */,
 				BD35FF1F2755091700B86F36 /* AppDelegate.swift in Sources */,
+				BDD03E0B2757CF440097A975 /* Extensions.swift in Sources */,
 				BD529D69275664E600F59569 /* LoginVC.swift in Sources */,
 				BD529D6B275686DC00F59569 /* LoginViewModel.swift in Sources */,
 				BD529D6E2756878200F59569 /* APIService.swift in Sources */,
