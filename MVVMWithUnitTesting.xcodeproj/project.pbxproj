@@ -273,6 +273,7 @@
 				BD35FF172755091700B86F36 /* Sources */,
 				BD35FF182755091700B86F36 /* Frameworks */,
 				BD35FF192755091700B86F36 /* Resources */,
+				0FBA967DC853677F9E1099E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +311,7 @@
 				BD35FF372755091900B86F36 /* Sources */,
 				BD35FF382755091900B86F36 /* Frameworks */,
 				BD35FF392755091900B86F36 /* Resources */,
+				061378DE5365824D67433907 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,6 +394,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		061378DE5365824D67433907 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests/Pods-MVVMWithUnitTesting-MVVMWithUnitTestingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FBA967DC853677F9E1099E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMWithUnitTesting/Pods-MVVMWithUnitTesting-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMWithUnitTesting/Pods-MVVMWithUnitTesting-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMWithUnitTesting/Pods-MVVMWithUnitTesting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		544E40BC5CD317D734A5D850 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,7 +690,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZBLGZ7QQXQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVVMWithUnitTesting/Info.plist;
+				INFOPLIST_FILE = "MVVMWithUnitTesting/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -683,7 +719,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZBLGZ7QQXQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVVMWithUnitTesting/Info.plist;
+				INFOPLIST_FILE = "MVVMWithUnitTesting/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -5,6 +5,11 @@ target 'MVVMWithUnitTesting' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  pod 'MBProgressHUD'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SDWebImage'
+  pod 'Alamofire'
+  
   # Pods for MVVMWithUnitTesting
 
   target 'MVVMWithUnitTestingTests' do

@@ -9,4 +9,9 @@ import UIKit
 
 class WebServicesManager: NSObject {
 
+    static let shared = WebServicesManager()
+    
+    
+    
+    
 }
